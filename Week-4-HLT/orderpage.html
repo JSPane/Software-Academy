@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <h1>Create Your Own Design</h1>
+
+    <table>
+        <tr>
+            <th><a href="homepage.html">Home</a></th>
+            <th><a href="contactus.html"> Contact</a></th>
+            <th><a href="aboutus.html"> About</a></th>
+        </tr>
+    </table>
+</header>
+
+<body>
+    <main>
+        <h2>Fill in the form to place a commission.</h2>
+    
+        <form action="results.html" method="GET">
+    
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div>
+              <label for="make">Select your make:</label>
+              <input list="make">
+              <datalist id="make">
+                <option value="SUV">
+                <option value="Sedan/Wagon">
+                <option value="Coupe">
+                <option value="Convertible/Roadster">
+                <option value="Electric">
+              </datalist>
+            </div>
+    
+            <div>
+              Which colour would you like sprayed on?
+              <div>
+                <label for="black">Black</label>
+                <input type="radio" id="black" name="colour" value="black">
+              </div>
+
+              <div>
+                <label for="silver">Silver</label>
+                <input type="radio" id="silver" name="colour" value="silver">
+              </div>
+              
+              <div>
+                <label for="red">Red</label>
+                <input type="radio" id="red" name="colour" value="red">
+              </div>
+    
+              <div>
+                <label for="blue">Blue</label>
+                <input type="radio" id="blue" name="colour" value="blue">
+              </div>
+    
+              <div>
+                <label for="green">Green</label>
+                <input type="radio" id="green" name="colour" value="green">
+              </div>
+            </div>
+
+            <div>
+              Would you like a custom nameplate?
+              <div>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="nameplate" value="yes">
+              </div>
+
+              <div>
+                <label for="no">No</label>
+                <input type="radio" id="no" name="nameplate" value="no">
+              </div>
+            </div>
+    
+            <div>
+              <label for="describe">If answered "Yes" please write your desired nameplate:</label>
+              <textarea id="describe" name="describe"></textarea>
+            </div>
+
+            <p>Would you like to receive promotional offers:</p>
+    
+            <div>
+                <label for="by email">By Email</label>
+                <input type="checkbox" id="by email" name="by email">
+            </div>
+            
+            <div>
+                <label for="by sms">By SMS</label>
+                <input type="checkbox" id="by sms" name="by sms">
+            </div>
+
+            <p>Thank you for your interest in contacting us. We will message you shortly.</p>
+    
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+      </main>
+</body>
+</html>

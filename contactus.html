@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <h1>Contact Information</h1>
+
+    <table>
+        <tr>
+            <th><a href="homepage.html">Home</a></th>
+            <th><a href="orderpage.html"> Create</a></th>
+            <th><a href="aboutus.html"> About</a></th>
+        </tr>
+    </table>
+</header>
+
+<body>
+    <main>
+        <h2>Phone and Email</h2>
+        
+        <table>
+            <tr>
+                <th>Car Services</th>
+                <th>Customer Care</th>
+                <th>Email Us</th>
+            </tr>
+            <tr>
+                <th>For setup and assistance with our vehicle</th>
+                <th>For general assistance, most notably your</th>
+                <th>Prefer email instead? Send us a message and</th>
+            </tr>
+            <tr>
+                <th>services, contact our Customer Assistance Center.</th>
+                <th>vehicle/account, Monday - Friday: 9AM - 9PM</th>
+                <th>we'll respond within 24 hours, Monday - Friday</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>08605 423045</th>
+                <th>08604 485935</th>
+                <th>(See Form)</th>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>Live Chat</th>
+            </tr>
+            <tr>
+                <th>Tusday - Friday: 9AM - 4PM</th>
+            </tr>
+            <tr>
+                <th>Saturday - Monday: Closed</th>
+            </tr>
+            <tr>
+                <th></th>
+            </tr>
+            <tr>
+                <th>(See Form)</th>
+            </tr>
+        </table>
+
+        <h3>Fill in the form to register a contact request.</h3>
+    
+        <form action="results.html" method="GET">
+    
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div>
+              How would you prefer to get in touch with us?
+              <div>
+                <label for="email">Email</label>
+                <input type="radio" id="email" name="contact" value="email">
+              </div>
+
+              <div>
+                <label for="live chat">Live Chat</label>
+                <input type="radio" id="live chat" name="contact" value="live chat">
+              </div>
+            </div>
+    
+            <div>
+              <label for="describe">Please write down any accessibility requirements:</label>
+              <textarea id="describe" name="describe"></textarea>
+            </div>
+
+            <p>Would you like to receive promotional offers:</p>
+    
+            <div>
+                <label for="by email">By Email</label>
+                <input type="checkbox" id="by email" name="by email">
+            </div>
+            
+            <div>
+                <label for="by sms">By SMS</label>
+                <input type="checkbox" id="by sms" name="by sms">
+            </div>
+
+            <p>Thank you for your interest in contacting us. We will message you shortly.</p>
+    
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+
+    </main>
+</body>
+</html>

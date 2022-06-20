@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script type="text/javascript">
+        function lightDark() {
+            var darkLight = document.body;
+            darkLight.classList.toggle("dark-mode");
+        }
+
+        function newPost() {
+            const titl = document.createElement("h1");
+            titl.innerText = document.getElementById("title");
+            document.body.appendChild(titl);
+
+            const auth = document.createElement("h3");
+            auth.innerText = document.getElementById("author");
+            document.body.appendChild(auth);
+
+            const para = document.createElement("p");
+            para.innerText = document.getElementById("body");
+            document.body.appendChild(para);
+        }
+    </script>
+
+    <div class="banner">
+        <div>
+          <h1>Sci-Fi Haven</h1>
+          <h3>For all your Sci-Fi games/modding needs</h3>
+        </div>  
+    </div>
+
+    <div class="topnav">
+        <a class="active" href="homepage.html">Home</a>
+        <a href="contactus.html">Contact</a>
+    </div>
+
+    <img src="C:\Users\Jay Panesar 3XS\OneDrive\Documents\TTA\Software-Academy\Week-7-HLT\CyberMonday.png" width="945" height="116" />
+</header>
+
+<body>
+    <h4>Categories - Project Ideas & Discussion / Topics - The Modding Potential of Starfield</h4>
+
+    <h1>Topics - The Modding Potential of Starfield</h1>
+
+    <h3>Posted by John Doe - 2 Edits, 1 Day Ago</h3>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Quisque consequat vulputate ex vitae cursus. 
+        Donec bibendum felis eget nulla iaculis semper. 
+        Integer congue ultricies justo id luctus. 
+        Praesent at turpis lobortis elit suscipit tempor vel a nisi. 
+        Proin accumsan accumsan nisi et lobortis. 
+        Nunc dui sem, tristique quis ex quis, euismod ornare ipsum. 
+        Aenean id tellus non nisi bibendum luctus et non augue. 
+        Donec orci nisi, tempor in ipsum in, ultrices porta urna. 
+        Vestibulum neque lectus, volutpat vitae facilisis in, consectetur eget dolor. 
+        Praesent aliquam sapien condimentum neque accumsan, eu bibendum purus suscipit. 
+        Pellentesque interdum massa ac turpis posuere, sit amet pharetra tortor bibendum.</p>
+
+    <h4>Create New Entry</h4>
+
+    <form action="homepage.html" method="GET" onsubmit="newPost()">
+
+        <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+    
+        <div>
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" required>
+        </div>
+    
+        <div>
+            <label for="body">Blog Body</label>
+            <textarea id="body" name="body" rows="4" cols="50" required></textarea>
+        </div>
+    
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <table>
+        <tr>
+            <th><button type="button" onclick="lightDark()">Enable Light/Dark Mode</button></th>
+        </tr>
+    </table>
+</body>
+</html>

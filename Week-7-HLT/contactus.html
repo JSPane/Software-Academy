@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script type="text/javascript">
+        function lightDark() {
+            var darkLight = document.body;
+            darkLight.classList.toggle("dark-mode");
+        }
+    </script>
+
+    <div class="banner">
+        <div>
+          <h1>Sci-Fi Haven</h1>
+          <h3>For all your Sci-Fi games/modding needs</h3>
+        </div>  
+    </div>
+
+    <div class="topnav">
+        <a class="active" href="homepage.html">Home</a>
+        <a href="contactus.html">Contact</a>
+    </div>
+
+    <img src="C:\Users\Jay Panesar 3XS\OneDrive\Documents\TTA\Software-Academy\Week-7-HLT\CyberMonday.png" width="945" height="116" />
+</header>
+
+<body>
+    <main>
+        <h1>Contact Information</h1>
+        
+        <table>
+            <tr>
+                <th>Car Services</th>
+                <th>Customer Care</th>
+                <th>Email Us</th>
+            </tr>
+            <tr>
+                <th>For setup and assistance with our vehicle</th>
+                <th>For general assistance, most notably your</th>
+                <th>Prefer email instead? Send us a message and</th>
+            </tr>
+            <tr>
+                <th>services, contact our Customer Assistance Center.</th>
+                <th>vehicle/account, Monday - Friday: 9AM - 9PM</th>
+                <th>we'll respond within 24 hours, Monday - Friday</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>08605 423045</th>
+                <th>08604 485935</th>
+                <th>(See Form)</th>
+            </tr>
+        </table>
+
+        <h4>Fill in the form to send an email.</h4>
+    
+        <form action="contactus.html" method="GET">
+
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+        
+            <div>
+                <label for="content">Content</label>
+                <textarea id="content" name="content" rows="4" cols="50" required></textarea>
+            </div>
+
+            <div>
+                <label for="prom">Would you like to receive promotional offers?</label>
+                <input list="prom" required>
+                <datalist id="prom">
+                  <option value="Yes">
+                  <option value="No">
+                </datalist>
+              </div>
+
+            <p>Thank you for contacting us. We will message you shortly.</p>
+    
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+
+        <table>
+            <tr>
+                <th><button type="button" onclick="lightDark()">Enable Light/Dark Mode</button></th>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
